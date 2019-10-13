@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <label id="state">State</label>
+        <button onmouseover="MouseIn()" onmouseout="MouseOut()">Mouse</button>
+    </body>
+
+    <script>
+    function MouseIn(){
+        document.getElementById("state").innerText="[鼠标移进]";
+    }
+
+    function MouseOut(){
+        document.getElementById("state").innerText = "[鼠标移出]";
+    }
+    </script>
+</html>

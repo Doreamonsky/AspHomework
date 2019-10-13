@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div id="layer" style="background-color:red; width:200px; height:
+            100px;" hidden></div>
+        <button onclick="Toggle(false);">Display</button>
+        <button onclick="Toggle(true);">Hide</button>
+    </body>
+    <script>
+    function Toggle(state){
+        document.getElementById("layer").hidden=state;
+    }
+    </script>
+</html>

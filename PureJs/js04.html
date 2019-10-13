@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <form>
+            <select id="ddlCollege"></select>
+        </form>
+
+        <button onclick="AddItems()">AddItems</button>
+        <button onclick="SetSelectedItems()">SetSelectedItems</button>
+        <button onclick="GetSelectedItems()">GetSelectedItems</button>
+
+        <label id="display">Current Selected:Null</label>
+
+        <script>
+            function AddItems() {
+                var selectBar = document.getElementById("ddlCollege");
+                selectBar.length=0;
+                selectBar.options.add(new Option('A、"人文学院", "001"'));
+                selectBar.options.add(new Option('B、"数理学院", "002"'));
+                selectBar.options.add(new Option('C、"生环学院", "003"'));
+            }
+            function SetSelectedItems(){
+                var selectBar = document.getElementById("ddlCollege");
+                selectBar.selectedIndex  = 1;   
+            }
+
+            function GetSelectedItems(){
+                var selectBar = document.getElementById("ddlCollege");
+                document.getElementById("display").innerText = selectBar.value;
+            }
+        </script>
+    </body>
+
+
+</html>

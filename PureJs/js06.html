@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <input type="text" id="num01" />
+        <select id="op"></select>
+        <input type="text" id="num02" />
+        <button onclick="Calc()">Calc</button>
+        <label id="display"></label>
+
+    </body>
+    <script>
+    function BindDdl(){
+        var selectBar = document.getElementById("op");
+        selectBar.options.add(new Option('+'));
+        selectBar.options.add(new Option('-'));
+        selectBar.options.add(new Option('*'));
+        selectBar.options.add(new Option('/'));
+    }
+    function Calc(){
+        var selectBar = document.getElementById("op");
+        var num01 = document.getElementById("num01").value;
+        var num02 = document.getElementById("num02").value;
+        var displayBar = document.getElementById("display");
+        displayBar.innerText = eval(num01+selectBar.value+num02);
+    }
+    BindDdl();
+    </script>
+</html>

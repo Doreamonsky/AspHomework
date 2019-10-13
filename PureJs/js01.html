@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form>
+            <label>Radius:</label>
+            <input id="r" type="text" />
+            <img width="120px" height="120px" onclick="ShowArea()">
+        </form>
+    </body>
+
+    <script lang="javascript">
+    function Area(){
+        var r = document.getElementById("r").value;
+        return Math.PI*Math.pow(r,2);
+    }
+    function ShowArea(){
+        alert(Area());
+    }
+    </script>
+</html>

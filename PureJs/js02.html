@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label>txtName:</label>
+        <input type="text" id="txtName" value="测试">
+        <button onclick="GetLabelValue()">GetLabelValue</button>
+        <button onclick="SetLabelValue()">SetLabelValue</button>
+    </body>
+    <script>
+    function GetLabelValue(){
+        alert(document.getElementById("txtName").value)
+    }
+    function SetLabelValue(){
+        document.getElementById("txtName").value ="张三";
+    }
+    </script>
+</html>
